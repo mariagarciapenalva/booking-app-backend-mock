@@ -6,9 +6,11 @@ const middlewares = jsonServer.defaults();
 
 server.use(cors());
 server.use(middlewares);
-server.use(jsonServer.json()); // Permite al servidor leer los datos JSON enviados por Vue
 
-// RUTA DE REGISTRO: Cuando Vue llame a /api/register, lo redirigimos internamente a la colección /login
+// 🛠️ CORRECCIÓN AQUÍ: Se utiliza el procesador de JSON correcto de json-server
+server.use(jsonServer.bodyParser);
+
+//  RUTA DE REGISTRO: Cuando Vue llame a /api/register, lo redirigimos internamente a la colección /login
 server.post('/api/register', (req, res) => {
   const db = router.db; // Accede a la base de datos de db.json
   const { email, password } = req.body;
