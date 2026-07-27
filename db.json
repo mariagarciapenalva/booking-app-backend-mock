@@ -1,1 +1,42 @@
+{
+  "login": [
+    {
+      "id": "1",
+      "email": "test@test.com",
+      "password": "123",
+      "token": "mock-jwt-token-valido-para-vue"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone Pro 2026",
+      "price": 899.99,
+      "description": "Pantalla OLED de última generación con chip de IA integrado.",
+      "image": "https://picsum.photos",
+      "category_id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Cafetera Express Automática",
+      "price": 149.50,
+      "description": "Muele el grano al instante y prepara espressos perfectos.",
+      "image": "https://picsum.photos",
+      "category_id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Camiseta Deportiva Transpirable",
+      "price": 24.95,
+      "description": "Tejido técnico ultra ligero ideal para running y entrenamiento.",
+      "image": "https://picsum.photos",
+      "category_id": "3"
+    }
+  ],
+  "categories": [
+    { "id": "1", "name": "Electrónica" },
+    { "id": "2", "name": "Hogar y Cocina" },
+    { "id": "3", "name": "Moda y Deporte" }
+  ]
+}
 
